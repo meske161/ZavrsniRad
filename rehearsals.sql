@@ -1,4 +1,4 @@
-﻿use edunovawp4;
+﻿use master;
 go
 drop database if exists rehearsals;
 go
@@ -38,4 +38,3 @@ Reserved bit
 alter table Users add foreign key (Band) references Bands (ID);
 alter table Reservations add foreign key (BandID) references Bands (ID);
 alter table Reservations add foreign key (RoomID) references Rooms (ID);
-
